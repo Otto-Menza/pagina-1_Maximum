@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="fontello.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="logo_1.png" alt="Logo de la Empresa">
+            <h2 class="maximum">MAXIMUM</h2>
+        </a>
+        <nav class="secciones">
+            <a href="" class="nav-link">LO NUEVO</a>
+            <a href="" class="nav-link">BOLSOS</a>
+            <a href="" class="nav-link">RIÑONERAS</a>
+            <a href="" class="nav-link">ACCESORIOS</a>
+            <a href="" class="nav-link">CONTACTO</a>
+        </nav>
+        <nav class="iconos">
+                <div class="buscar">
+                    <input type="text" class="buscar_texto" placeholder="Buscar producto">
+                    <a href="" class="boton">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            <a href="" class="nav-link"><img src="carrito.png" alt="Carrito"></a>
+            <a href="" class="nav-link"><img src="login.png" alt="Carrito"></a>
+        </nav>
+    </header>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="producto1.png" alt="">
+                        <p class="descripcion">Mini Maxi Riñonera</p>
+                        <span class="precio">$ 49.400</span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="producto2.png" alt="">
+                        <p class="descripcion">Mochila (Tula) Oliva</p>
+                        <span class="precio">$ 33.500</span>
+                    </div>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="producto3.png" alt="">
+                        <p class="descripcion">Bandolera / Bolso de hombro</p>
+                        <span class="precio">$ 65.700</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor del item sellecconado -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="producto1.png" alt="" id="img">
+                <h2 class="modelo" id="modelo">Mini Maxi Riñonera</h2>
+                <p id="descripcion">Riñonera con tela 100% sostenible, bolsillo interno, bolsillo principal, 2 bolsillos secundarios y correa graduable. De 19 cm alto, 15 cm ancho, 6 cm de profundidad.</p>
+                <span class="precio" id="precio">$ 49.400</span>
+
+                <div class="fila">
+                    <div class="color">
+                        <label for="">COLOR</label>
+                        <select name="" id="">
+                            <option value="">Negro</option>
+                            <option value="">Estampado</option>
+                        </select>
+                    </div>
+                    <button>AÑADIR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+    <div class="container-boton">
+        <a href="https://api.whatsapp.com/send?phone=573132540014" target="_blank">
+            <img class="boton" src="whatsapp.png" alt="">
+        </a>
+    </div>
+    
+</body>
+</html>
